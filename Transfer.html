@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <title>StyleTransfer</title>
+</head>
+<body>
+    <div class="cov">
+        <div class="cov-left">
+            <span>LxxH</span>
+        </div>
+        <div class="cov-center">
+            <span>Style</span>
+            <span>Transfer</span>
+            <span>Network</span>
+        </div>
+        <div class="cov-right">
+            <a href="https://github.com/ddlllooo" target="_blank"> <img src="icon/github-brands-solid.svg" alt=""></a>
+            <span>Github</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <div class="main-title">
+                <p>Image Style Transfer.</p>
+            </div>
+            <div class="left-title">
+                <p>Style Transformation.</p>
+            </div>
+            <div class="left-content">
+                <p>Upload an image for style migration</p>
+                <p>You can select the desired style for conversion.</p>
+            </div>
+            <div class="left-card">
+                <div class="left-card-title">
+                    <p>Update style</p>
+                </div>
+                <div class="left-card-body">
+                    <p>Lightness and Darkness</p>
+                    <div class="left-card-slider-1">
+                        <div class="left-card-slider-thumb-1"></div>
+                    </div>
+                    <p>Saturation</p>
+                    <div class="left-card-slider-2">
+                        <div class="left-card-slider-thumb-2"></div>
+                    </div>
+                    <p>Styles</p>
+                    <div class="style-items">
+                        <div class="item" id="style_01"><img src="style_imgs/style_01.jpg" alt=""></div>
+                        <div class="item" id="style_02"><img src="style_imgs/style_02.jpg" alt=""></div>
+                        <div class="item" id="style_03"><img src="style_imgs/style_03.jpg" alt=""></div>
+                        <div class="item" id="style_04"><img src="style_imgs/style_04.jpg" alt=""></div>
+                        <div class="item" id="style_05"><img src="style_imgs/style_05.jpg" alt=""></div>
+                        <div class="item" id="style_06"><img src="style_imgs/style_06.jpg" alt=""></div>
+                        <div class="item" id="style_07"><img src="style_imgs/style_07.jpg" alt=""></div>
+                        <div class="item" id="style_08"><img src="style_imgs/style_08.jpg" alt=""></div>
+                        <div class="item" id="style_09"><img src="style_imgs/style_09.jpg" alt=""></div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="preview-box" id="img-preview">
+                <span>Image Preview</span>
+            </div>
+            <button class="custom-upload-btn" onclick="document.getElementById('Upload-img').click()">Upload Image</button>
+            <input type="file" id="Upload-img" accept="image/jpeg">
+            <a id="downloadLink" class="download-btn" disabled>Download Image</a>
+        </div>
+
+    </div>
+    
+        
+
+    <script src="static/script.js"></script>
+</body>
+</html>
